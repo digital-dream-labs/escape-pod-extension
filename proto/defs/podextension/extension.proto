@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package podextension;
+option go_package = "github.com/digital-dream-labs/escape-pod-extension/protos/lang/go/podextension";
+
+service PodExtension {
+    rpc Unary(UnaryReq) returns (UnaryResp);
+}
+
+message UnaryReq {
+  // the name of the intent as sent by the escape pod.
+  string intent_name = 1;
+  // a list of parameters as parsed by the escape pod
+  map<string, string> parameters = 2;
+}
+
+message UnaryResp {
+  // the named intent to respond with.
+  string intent_name = 1;
+  // a list of parameters to respond with
+  map<string, string> parameters = 2;
+}
