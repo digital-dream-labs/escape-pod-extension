@@ -5,7 +5,7 @@ In this folder, you'll find example escape pod extensions written in Go.  Please
 |Plugin| Description |
 |--|--|
 | pkg/server | The service responsible for GRPC interactions |
-| pkg/battery | Ask Vector for battery statys |
+| pkg/battery | Ask Vector for battery status |
 | pkg/genericresponses | An example that makes vector say a canned phrase |
 | pkg/selfaware | See what happens when you try to make Vector self aware. |
 | pkg/openweathermap | A quick-and-dirty openweathermap.org processor |
