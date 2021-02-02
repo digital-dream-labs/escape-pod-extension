@@ -1,0 +1,68 @@
+linters-settings:
+  goconst:
+    min-len: 2
+    min-occurrences: 2
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+    disabled-checks:
+  gocyclo:
+    min-complexity: 20
+  golint:
+    min-confidence: 0
+  govet:
+    check-shadowing: false
+  maligned:
+    suggest-new: true
+  misspell:
+    locale: US
+
+linters:
+  disable-all: true
+  enable:
+    - bodyclose
+    - depguard
+    # - dogsled
+    - errcheck
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    # - golint
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    # - interfacer
+    - misspell
+    - nakedret
+    - rowserrcheck
+    - scopelint
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - varcheck
+    - whitespace
+    - maligned
+
+run:
+  skip-dirs:
+    - rts
+
+issues:
+  # Excluding configuration per-path, per-linter, per-text and per-source
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - golint
+        - staticcheck
+        - scopelint
+
