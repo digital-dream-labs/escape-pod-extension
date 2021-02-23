@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  escape-pod-extension:
+    build: .
+    entrypoint:
+      - "/escapepodextension"
+    environment: 
+      - DDL_RPC_PORT=${DDL_RPC_PORT}
+      - DDL_RPC_INSECURE=${DDL_RPC_INSECURE}
+      - DDL_RPC_CLIENT_AUTHENTICATION=${DDL_RPC_CLIENT_AUTHENTICATION}
+      - ESCAPE_POD_WEATHER_API_KEY=${ESCAPE_POD_WEATHER_API_KEY}
+      - ESCAPE_POD_WEATHER_UNITS=${ESCAPE_POD_WEATHER_UNITS}
+      - ESCAPE_POD_WEATHER_ZIP_CODE=${ESCAPE_POD_WEATHER_ZIP_CODE}
+      - ESCAPE_POD_ROBOT_TARGET=${ESCAPE_POD_ROBOT_TARGET}
+      - ESCAPE_POD_ROBOT_TOKEN=${ESCAPE_POD_ROBOT_TOKEN}
+    expose:
+      - "8089"
+    ports:
+      - "8089:8089"
