@@ -1,6 +1,6 @@
 # escape-pod-extension
 
-Want to add additional functionality to your [escape pod?](https://www.digitaldreamlabs.com/products/escape-pod-1?_pos=1&_sid=b48023bf3&_ss=r)  You're in the right place!
+Want to add additional functionality to your [escape pod?](https://www.digitaldreamlabs.com/products/escape-pod)  You're in the right place!
 
 Do you want your Vector robot to dance for every response on the third Tuesday of every month?  Do you want them to tell you the weather?  Write an app, turn on the "external_parser" option in your intent, and have at it!
 
