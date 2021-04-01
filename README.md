@@ -15,7 +15,7 @@ Do you want your Vector robot to dance for every response on the third Tuesday o
 
 Note:  This will only function on beta 0.4 or above.  
 
-At the bare minimum, you'll need to set the following variables in /etc/escapepod.conf
+At the bare minimum, you'll need to set the following variables in /etc/escape-pod.conf
 
 |Variable| Description |
 |--|--|
