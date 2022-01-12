@@ -23,4 +23,9 @@ At the bare minimum, you'll need to set the following variables in /etc/escape-p
 | ESCAPEPOD_EXTENDER_TARGET | The hostname and port the service you've written is running on |
 | ESCAPEPOD_EXTENDER_DISABLE_TLS | This will allow clear-text communication with your serivce (but please use TLS!) |
 
+## How do I get my token?
+Obtaining the token is relatively easy in OSKR robots: When you are logged in via SSH into your robot, enter the command:  
+`cat /data/data/com.anki.victor/persistent/token/token.jwt`  
+DDL is working on a way to effectively and easily obtain the robot's token through alternative methods for production robots, as they cannot be accessed via SSH.
+
 For a full list of additional variables, please see the [hugh grpc client library viper loader](https://github.com/digital-dream-labs/hugh/blob/main/grpc/client/viper.go)
